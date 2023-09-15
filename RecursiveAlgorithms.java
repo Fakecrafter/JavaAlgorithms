@@ -37,4 +37,9 @@ public class RecursiveAlgorithms {
             return fib(n-1) + fib(n-2);
         }
     }
+    public int fibTail(int n, int a, int b) {
+        if(n==0) {return b;}
+        else if(n==1) {return a;}
+        else {return fibTail(n-1, b, a+b);}
+    }
 }
