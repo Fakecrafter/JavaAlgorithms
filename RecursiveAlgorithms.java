@@ -27,7 +27,7 @@ public class RecursiveAlgorithms {
     public int[] fibArray(int n) {
         int[] a = new int[n];
         for(int i=0; i < n; i++) {
-            a[i] = fib(i);
+            a[i] = fib(i+1);
         }
     }
     public int fib(int n) {
