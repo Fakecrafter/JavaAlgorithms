@@ -24,4 +24,17 @@ public class RecursiveAlgorithms {
             return ggT(a, b-a);
         }
     }
+    public int[] fibArray(int n) {
+        int[] a = new int[n];
+        for(int i=0; i < n; i++) {
+            a[i] = fib(i);
+        }
+    }
+    public int fib(int n) {
+        if(n==1 || n==2) {
+            return 1;
+        } else {
+            return fib(n-1) + fib(n-2);
+        }
+    }
 }
