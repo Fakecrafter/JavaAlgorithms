@@ -3,7 +3,7 @@ public class Algs {
 		if(s.length() <= 1) {
 			return s;
 		}
-		return umkehren(s.substring(1)) + s[0];
+		return umkehren(s.substring(1)) + s.charAt(0);
 	}
 	public String glaetten(String pText, int n) {
 		if(n == pText.length()) {return pText}
@@ -16,7 +16,7 @@ public class Algs {
 	}
 	public String verwandelInGrossbuchstaben(String s, int n) {
 		if(n == s.length) {return s;}
-		s[n] = (char) ((int) s.charAt(n)) - 32;
+		s = s.substring(0, n) + ((char) ((int) s.charAt(n))) - 32 + s.substring(n+1);
 		return verwandelInGrossbuchstaben(s, n+1);
 	}
     public String stripSpaces(String s) {
