@@ -22,7 +22,7 @@ public class Algs {
     public String stripSpaces(String s) {
         if(s.equals(" ")) {return "";}
         if(s.length() == 1) {return s;}
-        if(s.charAt(0) == ' ') {return stripSpaces(s.substring(1););}
+        if(s.charAt(0) == ' ') {return stripSpaces(s.substring(1));}
         return s.substring(0,1) + stripSpaces(s.substring(1))
     }
     public int lsnr(String s, int compare, int i) {
